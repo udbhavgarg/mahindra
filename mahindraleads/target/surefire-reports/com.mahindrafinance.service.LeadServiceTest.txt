@@ -1,0 +1,18 @@
+-------------------------------------------------------------------------------
+Test set: com.mahindrafinance.service.LeadServiceTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.745 s <<< FAILURE! -- in com.mahindrafinance.service.LeadServiceTest
+com.mahindrafinance.service.LeadServiceTest.testCreateLead_Success -- Time elapsed: 0.715 s <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "org.springframework.http.ResponseEntity.getStatusCode()" because "response" is null
+	at com.mahindrafinance.service.LeadServiceTest.testCreateLead_Success(LeadServiceTest.java:42)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.mahindrafinance.service.LeadServiceTest.testCreateLead_LeadIdExists -- Time elapsed: 0.003 s <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "com.mahindrafinance.repo.LeadRepository.existsById(Object)" because "this.leadRepository" is null
+	at com.mahindrafinance.service.LeadServiceTest.testCreateLead_LeadIdExists(LeadServiceTest.java:58)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
